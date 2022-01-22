@@ -1,5 +1,4 @@
 import "./ProjectPage.css"
-import ScrollBar from "../../component/Scrollbar/Scrollbar"
 import Footer from "../../component/Footer/Footer"
 import { HashLink } from "react-router-hash-link"
 import { HiArrowNarrowLeft } from "react-icons/hi"
@@ -18,8 +17,6 @@ const ProjectPage = () => {
     return (
         <>
         <section className="projPage">
-            <ScrollBar />
-
             <nav
             data-aos="zoom-out"
             className="backButton">

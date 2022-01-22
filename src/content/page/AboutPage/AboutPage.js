@@ -1,5 +1,5 @@
 import "./AboutPage.css"
-import ScrollBar from "../../component/Scrollbar/Scrollbar"
+import Footer from "../../component/Footer/Footer"
 import bioPic from "../../component/Images/bioPic.jpg"
 import { HiArrowNarrowLeft } from "react-icons/hi"
 import { FaUniversity, FaLaptopCode, FaRobot} from "react-icons/fa"
@@ -8,8 +8,8 @@ import { HashLink } from "react-router-hash-link"
 
 const AboutPage = () => {
     return (
+        <>
         <section className="aboutPage">
-
             <nav
             data-aos="zoom-out"
             className="backButton">
@@ -139,6 +139,8 @@ const AboutPage = () => {
                 </div>
             </div>
         </section>
+        <Footer />
+        </>
     );
 }
  
