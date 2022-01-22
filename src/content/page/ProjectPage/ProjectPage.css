@@ -1,0 +1,306 @@
+.projPage {
+    background-color: var(--background);
+}
+
+.projPage .backButton {
+    color: white;
+    position: fixed;
+    font-size: 70px;
+    margin-left: 30px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.projPage .backButton:hover {
+    transform: scale(1.2);
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.start .container .text  {
+    margin-right: 40px;
+    margin-left: 25px;
+    align-items: flex-start;
+}
+
+.start .container .text .head  {
+    font-size: 36px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.6rem;
+    font-weight: normal;
+    color: white;
+}
+
+.start .container .text .lines {
+    display: inline-block;
+    margin-bottom: 3.2rem;
+}
+
+.start .container .text .lines span {
+    display: block;
+    width: 88px;
+    height: 4px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background: var(--primary);
+}
+
+.start .container .text .lines span:last-child {
+    margin-top: 10px;
+    margin-left: 54px;
+}
+
+.start .container .text .details {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.intro .container .text  {
+    margin-right: 40px;
+    margin-left: 25px;
+    align-items: flex-start;
+}
+
+.intro .container .text .head  {
+    font-size: 36px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.6rem;
+    font-weight: normal;
+    color: white;
+}
+
+.intro .container .text .lines {
+    display: inline-block;
+    margin-bottom: 3.2rem;
+}
+
+.intro .container .text .lines span {
+    display: block;
+    width: 88px;
+    height: 4px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background: var(--primary);
+}
+
+.intro .container .text .lines span:last-child {
+    margin-top: 10px;
+    margin-left: 54px;
+}
+
+.master {
+    background-color: var(--background);
+}
+
+.master .holder {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.master .holder .header  {
+    margin-right: 100px;
+}
+
+.master .holder .text  {
+    margin-right: 40px;
+    margin-left: 25px;
+    align-items: flex-start;
+}
+
+.master .holder .text .head  {
+    font-size: 36px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.6rem;
+    font-weight: normal;
+    color: white;
+}
+
+.master .holder .text .lines {
+    display: inline-block;
+    margin-bottom: 3.2rem;
+}
+
+.master .holder .text .lines span {
+    display: block;
+    width: 88px;
+    height: 4px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background: var(--primary);
+}
+
+.master .holder .text .lines span:last-child {
+    margin-top: 10px;
+    margin-left: 54px;
+}
+
+.swiper {
+    height: 400px;
+    width: 600px;
+    margin: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--background);
+}
+  
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 20px;
+    margin-top: 0px;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.swiper .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    transform: skewX(-15deg);
+}
+
+.swiper-slide .card:hover{
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.swiper-slide .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.swiper-slide .card:hover .content {
+    opacity: 1;
+    transform: translateY(-40px);
+}
+
+.swiper-slide .card .contentBox p {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.swiper-slide .card .contentBox p span{
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.swiper-slide .card ul{
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+}
+
+.swiper-slide .card ul li{
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.swiper-slide .card:hover ul li{
+    transform: translateY(-20px);
+    opacity: 1;
+}
+
+.swiper-slide .card ul li a{
+    color: white;
+    font-size: 25px;
+}
+
+
+@media (max-width: 1300px) {
+    .master .holder {
+        flex-direction: column;
+    }
+    .master .holder .header  {
+        margin-right: 0;
+        margin-top: 90px;
+    }
+}
+
+@media (max-width: 800px) {
+    .projPage .backButton {
+        font-size: 55px;
+        margin-left: 10px;
+    }    
+}
+
+@media (max-width: 720px) {
+    .swiper {
+        width: 350px;
+        height: 250px;
+    }
+    .swiper-slide .card {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide .card:hover ul li{
+        transform: translateY(20px);
+    }
+}
+
+@media (max-width: 360px) {
+    .master .holder .text .head {
+        font-size: 25px;
+    }
+    .swiper {
+        width: 250px;
+        height: 280px;
+    }
+    .swiper-slide .card {
+        width: 100%;
+        height: 100%;
+    }
+}
