@@ -95,8 +95,7 @@
         font-size: 25px;
     }
     .navbar .menu {
-        display: flex;
-        flex-direction: column;
+        display: none;
         width: 100%;
         position: absolute;
         top: 80px;
@@ -104,6 +103,8 @@
         text-align: center;
     }
     .navbar .menu.active {
+        display: flex;
+        flex-direction: column;
         position: absolute;
         width: 100%;
         right: 0;
