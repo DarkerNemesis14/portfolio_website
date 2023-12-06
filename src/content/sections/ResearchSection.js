@@ -17,7 +17,7 @@ const ResearchSection = () => {
                             <p className="head">Neural Networks</p>
                             <p>Connected Hidden Neurons (CHNNet): An Artificial Neural Network for Rapid Convergence</p>
                             <ul>
-                                <li><a href="https://arxiv.org/abs/2305.104684" target="_blank"><SiArxiv /></a></li>
+                                <li><a href="https://arxiv.org/abs/2305.10468" target="_blank"><SiArxiv /></a></li>
                             </ul>
                         </div>
                     </div>
