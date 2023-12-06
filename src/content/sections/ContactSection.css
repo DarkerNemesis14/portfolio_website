@@ -1,0 +1,225 @@
+.contactsection {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+}
+
+.contactsection::before {
+    content: '';
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background-color: var(--background);
+    box-shadow: 15px 25px 45px rgba(95, 95, 95, 0.5);
+    border-radius: 50%;
+    transform: translate(-35vw,-30vh);
+}
+
+.contactsection::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: var(--background);
+    box-shadow: -15px -25px 45px rgba(95, 95, 95, 0.5);
+    border-radius: 50%;
+    transform: translate(35vw,30vh);
+}
+
+.contactsection .container {
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contactsection .container .title {
+    z-index: 1;
+    margin-right: 5%;
+    text-align: center;
+    color: var(--secondary);
+}
+
+.contactsection .container .maintitle {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.contactsection .container .title .line {
+    display: block;
+    width: 88%;
+    height: 4px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background: var(--primary);
+}
+
+.contactsection .container .subtitle {
+    margin-top: 5px;
+    font-weight: 350;
+}
+
+.contactsection .container .contactinfo {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary);
+    padding: 60px;
+    position: relative;
+    z-index: 5;
+    width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(15px);
+}
+
+.contactsection .container .contactinfo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    transform: skewX(-15deg);
+}
+
+.contactsection .container .contactinfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contactsection .container .contactinfo .box .icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.contactsection .container .contactinfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 19px;
+    color: var(--secondary);
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contactsection .container .contactinfo .box .text .head {
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.contactsection .links {
+    z-index: 1;
+}
+
+.contactsection .links ul {
+    height: 20vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.contactsection .links ul li {
+    text-align: center;
+    position: relative;
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 30px;
+    line-height: 60px;
+    color: #666;
+    background-color: black;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contactsection .links ul li a{
+    color: #666;
+}
+
+.contactsection .links ul li:hover a{
+    color: white;
+}
+
+.contactsection .links ul li::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+
+.contactsection .links ul li:hover::before {
+    filter: blur(4px);
+    box-shadow: 0 0 15 white;
+    transform: scale(1.1);
+}
+
+
+@media (max-width:1340px) {
+    .contactsection::after {
+        display: none;
+    }
+}
+
+@media (max-width: 1135px) {
+    .contactsection .container {
+        flex-direction: column-reverse;
+    }
+
+    .contactsection .container .title {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    .contactsection .container .contactinfo {
+        width: 440px;
+        margin-left: 0;
+    }
+    .contactsection .container .links ul li {
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 450px) {
+    .contactsection .container .contactinfo {
+        width: 280px;
+        padding: 10px;
+    }
+    .contactsection .container .contactinfo .box .icon {
+        height: 40px;
+        width: 40px;
+    }
+    
+    .contactsection .container .contactinfo .box .text {
+        font-size: 14px;
+    }
+    .contactsection .links ul li {
+        margin: 0 2px;
+    }
+}

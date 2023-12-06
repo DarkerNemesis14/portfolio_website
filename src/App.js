@@ -1,14 +1,20 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Master from './content/page/Master/Master';
-import AboutPage from './content/page/AboutPage/AboutPage';
-import ProjectPage from './content/page/ProjectPage/ProjectPage';
-import Error404 from './content/page/Error404/Error404';
-import ScrollToTop from './content/component/ScrollToTop/ScrollToTop';
-import Scrollbar from './content/component/Scrollbar/Scrollbar';
 import { useEffect } from 'react';
 import Aos from "aos"
 import "aos/dist/aos.css"
+
+//import context provider
+import { PageContextProv } from './context/PageContext';
+
+// import contents
+import Navbar from "./content/components/Navbar"
+import Master from './content/pages/Master';
+import About from './content/pages/About';
+import Works from './content/pages/Works';
+import Error404 from './content/pages/Error404';
+import ScrollToTop from './content/components/ScrollToTop';
+import Scrollbar from './content/components/Scrollbar';
 
 function App() {
   useEffect (() => {
@@ -17,16 +23,19 @@ function App() {
 
   return (
     <>
-      <Router>
-        <Scrollbar />
-        <ScrollToTop />
-        <Switch>
-          <Route exact path="/" component={ Master } />
-          <Route exact path="/about" component={ AboutPage } />
-          <Route exact path="/projects" component={ ProjectPage } />
-          <Route component={ Error404 } />
-        </Switch>
-      </Router>
+      <PageContextProv>
+        <Router>
+          <Scrollbar />
+          <ScrollToTop />
+          <Navbar />
+          <Switch>
+            <Route exact path="/" component={ Master } />
+            <Route exact path="/about" component={ About } />
+            <Route exact path="/projects" component={ Works } />
+            <Route component={ Error404 } />
+          </Switch>
+        </Router>
+      </PageContextProv>
     </>
   );
 }

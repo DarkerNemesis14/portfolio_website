@@ -1,0 +1,142 @@
+.experiencesection {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--background);
+}
+
+.experiencesection::before {
+    content: '';
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background-color: var(--background);
+    box-shadow: 15px 25px 45px rgba(95, 95, 95, 0.5);
+    border-radius: 50%;
+    transform: translate(-35vw,-30vh);
+}
+
+.experiencesection .title {
+    z-index: 1;
+    margin-right: 5%;
+    text-align: center;
+    color: var(--secondary);
+}
+
+.experiencesection .maintitle {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.experiencesection .title .line {
+    display: block;
+    width: 70%;
+    height: 4px;
+    border-radius: 5px;
+    background: var(--primary);
+}
+
+.experiencesection .title .line:last-child {
+    margin-left: auto;
+    translate: 0 5px;
+}
+
+.experiencesection .subtitle {
+    margin-top: 5px;
+    font-weight: 350;
+}
+
+.experiencesection .experienceinfo {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary);
+    padding: 60px;
+    position: relative;
+    z-index: 5;
+    width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(15px);
+}
+
+.experiencesection .experienceinfo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    transform: skewX(-15deg);
+}
+
+.experiencesection .experienceinfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.experiencesection .experienceinfo .box .icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.experiencesection .experienceinfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 19px;
+    color: var(--secondary);
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.experiencesection .experienceinfo .box .text .head {
+    font-weight: 500;
+    color: var(--primary);
+}
+
+@media (max-width: 1135px) {
+    .experiencesection {
+        flex-direction: column-reverse;
+    }
+
+    .experiencesection .title {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    .experiencesection .experienceinfo {
+        width: 440px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .experiencesection .experienceinfo {
+        width: 280px;
+        padding: 10px;
+    }
+    .experiencesection .experienceinfo .box .icon {
+        height: 40px;
+        width: 40px;
+    }
+    
+    .experiencesection .experienceinfo .box .text {
+        font-size: 14px;
+    }
+}

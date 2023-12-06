@@ -1,0 +1,16 @@
+footer {
+    background-color: black;
+    padding: 20px 20px;
+    color: var(--secondary);
+    text-align: center;
+}
+
+footer span .link {
+    font-weight: 350;
+    color: var(--tertiary);
+    text-decoration: none;
+}
+
+footer span .link:hover {
+    cursor: pointer;
+}
