@@ -9,7 +9,7 @@ import { ImFacebook } from "react-icons/im"
 import { FiGithub } from "react-icons/fi"
 
 // import files
-import resume from "../files/RafiadPortfolioResume.pdf"
+import cv from "../files/RafiadPortfolioCV.pdf"
 
 // import components
 import Button from "../components/Button"
@@ -48,8 +48,8 @@ const ContactSection = () => {
                             <p>Dhaka, Bangladesh</p>
                         </div>
                     </div>
-                    <a href={resume} download="RafiadResume">
-                        <Button text={"get resume"}/>
+                    <a href={cv} download="RafiadCV">
+                        <Button text={"get cv"}/>
                     </a>
                 </div>
 
@@ -63,7 +63,7 @@ const ContactSection = () => {
             <div className="links" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                 <ul>
                     <li><a href="https://www.facebook.com/rafiadsadatshahir.14" target="_blank"><ImFacebook /></a></li>
-                    <li><a href="https://twitter.com/RafiadSadat" target="_blank"><FaTwitter /></a></li>
+                    <li><a href="https://twitter.com/rafiadsadat14" target="_blank"><FaTwitter /></a></li>
                     <li><a href="https://github.com/DarkerNemesis14" target="_blank"><FiGithub /></a></li>
                     <li><a href="https://www.youtube.com/channel/UCUmOK2ICcPH-bFYrzXgk65g" target="_blank"><FaYoutube /></a></li>
                     <li><a href="https://www.linkedin.com/in/rafiad-sadat-shahir-5359651ba" target="_blank"><FaLinkedinIn /></a></li>

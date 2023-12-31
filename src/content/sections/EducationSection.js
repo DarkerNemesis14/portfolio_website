@@ -15,8 +15,8 @@ const EducationSection = () => {
                         <div className="text">
                             <p className="head">BSc in CSE</p>
                             <p>BRAC University</p>
-                            <p>CGPA: 3.93</p>
-                            <p>2020 - 2023</p>
+                            <p>CGPA: 3.92</p>
+                            <p>Jan 2020 - Jan 2024</p>
                         </div>
                     </div>
 
@@ -28,7 +28,7 @@ const EducationSection = () => {
                             <p className="head">HSC</p>
                             <p>Barishal Cadet College</p>
                             <p>GPA: 5.0</p>
-                            <p>2017 - 2019</p>
+                            <p>May 2017 - May 2019</p>
                         </div>
                     </div>
                 </div>

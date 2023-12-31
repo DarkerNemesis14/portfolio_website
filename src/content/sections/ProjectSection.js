@@ -25,7 +25,7 @@ const ProjectSection = () => {
                             </div>
                             <div className="text">
                                 <p className="head">Skill Hub</p>
-                                <p>A web application that connects students and companies.</p>
+                                <p>A web application that connects undergrad students and companies.</p>
                                 <ul>
                                     <li><a href="https://github.com/DeBug51/skill_hub" target="_blank"><FaGit /></a></li>
                                 </ul>
@@ -50,8 +50,21 @@ const ProjectSection = () => {
                                 <VscDebugAll size="25px" color="black"/>
                             </div>
                             <div className="text">
+                                <p className="head">Neural Network Repository</p>
+                                <p>A simple library to test CHNNet with other feed forward layers.</p>
+                                <ul>
+                                    <li><a href="https://github.com/DarkerNemesis14/NeuralNetworkAlgorithms" target="_blank"><FaGit /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className="projectinfo">
+                            <div className="icon">
+                                <VscDebugAll size="25px" color="black"/>
+                            </div>
+                            <div className="text">
                                 <p className="head">Bowling Game</p>
-                                <p>A simple bowling game.</p>
+                                <p>A simple Bowling game.</p>
                                 <ul>
                                     <li><a href="https://github.com/DarkerNemesis14/BowlingGame_OpenGL" target="_blank"><FaGit /></a></li>
                                 </ul>
@@ -76,6 +89,19 @@ const ProjectSection = () => {
                                 <VscDebugAll size="25px" color="black"/>
                             </div>
                             <div className="text">
+                                <p className="head">Algorithms</p>
+                                <p>The repository contains solutions to some popular algorithmic problems.</p>
+                                <ul>
+                                    <li><a href="https://github.com/DarkerNemesis14/Algorithms" target="_blank"><FaGit /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className="projectinfo">
+                            <div className="icon">
+                                <VscDebugAll size="25px" color="black"/>
+                            </div>
+                            <div className="text">
                                 <p className="head">OAFF Robot</p>
                                 <p>A simple robot that extinguishes fire avoiding obstacles in its path.</p>
                                 <ul>
@@ -89,10 +115,10 @@ const ProjectSection = () => {
                                 <VscDebugAll size="25px" color="black"/>
                             </div>
                             <div className="text">
-                                <p className="head">Neural Network Repository</p>
-                                <p>A repository that contains some popular feed forward neural network layers.</p>
+                                <p className="head">CHNNet Tests</p>
+                                <p>The repository contains codes for testing CHNNet against FNN using Tensorflow.</p>
                                 <ul>
-                                    <li><a href="https://github.com/DarkerNemesis14/NeuralNetworkAlgorithms" target="_blank"><FaGit /></a></li>
+                                    <li><a href="https://github.com/ThesisG/CHNNetTests" target="_blank"><FaGit /></a></li>
                                 </ul>
                             </div>
                         </div>
